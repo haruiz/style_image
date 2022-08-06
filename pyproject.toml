@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "style_image"
+version = "0.1.0"
+description = ""
+authors = ["Henry Ruiz  <henryruiz22@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+tensorflow-hub = "^0.12.0"
+numpy = "^1.23.1"
+Pillow = "^9.2.0"
+tensorflow = "^2.9.1"
+validators = "^0.20.0"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^22.6.0"
+
+[tool.poetry.scripts]
+style_image = "style_image.main:app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
